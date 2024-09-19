@@ -17,3 +17,10 @@ def test_divide():
 def test_divide_by_zero():
     with pytest.raises(ValueError):
         divide(1, 0)
+def test_factorial():
+    assert factorial(5) == 120
+    assert factorial(0) == 1
+
+def test_factorial_negative():
+    with pytest.raises(ValueError):
+        factorial(-1)
