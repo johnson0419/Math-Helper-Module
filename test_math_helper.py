@@ -1,6 +1,6 @@
 # test_math_helper.py
 import pytest
-from math_helper import add, subtract, multiply, divide
+from math_helper import add, subtract, multiply, divide, factorial
 
 def test_add():
     assert add(1, 2) == 3
